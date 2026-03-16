@@ -222,3 +222,15 @@ Using technologies like **PON**, operators can deliver high-speed internet to mi
 Infrastructure elements such as **Apparato Edificio** play a crucial role in distributing fiber connections within residential buildings, ensuring that each apartment can access ultra-broadband services.
 
 
+
+
+![SERF2](foto5.png)
+![SERF3](foto6.png)
+![SERF4](foto7.png)
+
+
+
+
+
+
+
