@@ -225,6 +225,16 @@ Infrastructure elements such as **Apparato Edificio** play a crucial role in dis
 
 
 ![SERF2](foto5.png)
+
+03_016_016024_8000032933_8
+
+APPARATO EDIFICIO :4026609553665681626
+
+because Scala a lot of number select : select filter Commune : Bergamo QLIK -> NETWORK CREATION STREAM -> DASHBOARD CIVILE NORD-OVEST BECUAE BERGAMO THERE
+
+Down there are a lot of columns. We need to focus and go inside the sheet column SCALA SHEET and make zoom on the map so the value of the SCALA SHEET column shows
+
+
 ![SERF3](foto6.png)
 ![SERF4](foto7.png)
 
