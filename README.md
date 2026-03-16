@@ -396,3 +396,331 @@ BG_02/01E4
 
 ![SERF5](foto11.png)
 
+
+
+![SERF12](foto12.png)
+![SERF13](foto13.png)
+
+# Open Fiber Meeting – Full Conversation Translation and Explanation
+
+I will translate the conversation completely in a clear way because the original text contains repetition and errors from the voice transcription.
+I will write it as a **clear dialogue in English** so the discussion in the meeting can be understood.
+
+---
+
+# Conversation Translation
+
+**Nico Laruina (Open Fiber):**
+And does this also apply to **AEB**?
+
+**Carine:**
+Okay.
+
+**Mohammad Faidi:**
+Okay.
+
+---
+
+**Nico:**
+Why?
+
+To answer your question Mohammad, why does the **network path in this PFP look strange?**
+
+Because here we are **not moving in a Ring or Semi-Ring structure**.
+
+---
+
+**Nico:**
+Okay, because what happens here is that when we reach **point number 4**...
+
+We have **3 and 4**.
+
+Wait a moment, let me see if I explain it correctly.
+
+When we reach **point 4**, what happens?
+
+I start **connecting the segments together**.
+
+---
+
+**Nico:**
+So I do it like this:
+
+I am on **AB**.
+
+I create a **Ring**.
+
+And the **PFP is divided into a Semi-Ring**.
+
+Why is it called **Semi-Ring**?
+
+Because there is **a full ring but split into two halves**.
+
+---
+
+## Nico explains the structure
+
+The **POP** is located in the center.
+
+Then we have:
+
+* **West side**
+* **East side**
+
+And these two parts **eventually reconnect to form a complete ring**.
+
+---
+
+**Nico:**
+After that, in this section the **PFS units connect**.
+
+So here we will have:
+
+* **PFS1**
+* **PFS2**
+* **PFS3**
+* **PFS4**
+
+---
+
+**Nico:**
+Meaning that from the **PFP**
+I connect to the **PFS**.
+
+So we will have:
+
+* **PFS1**
+* then **PFS2**
+* until **PFS4**
+
+Is that clear?
+
+Do you have any questions?
+
+---
+
+**Carine:**
+But Nico, why does **number 4 not connect directly**, and instead goes to **3 first**?
+
+---
+
+**Nico:**
+Because each one has **its own PFS group**.
+
+---
+
+**Carine:**
+Ah, I understand.
+
+---
+
+**Nico:**
+So this one will have **its own PFS**
+and the other will have **another PFS group**.
+
+But here what will happen?
+
+Instead of being **3**,
+it will be **4 and 1**.
+
+---
+
+## Nico asks Mohammad
+
+**Nico:**
+What is the strange thing about this path, Mohammad?
+
+Why don’t I go **directly in a ring like this**?
+
+---
+
+**Mohammad Faidi:**
+Nothing.
+
+---
+
+**Nico:**
+But **PFS2 is connected**.
+
+It is already connected.
+
+---
+
+## Nico explains the problem
+
+What actually happens is that:
+
+**This connection does not exist here.**
+
+Right?
+
+So I connect **2 with 4**.
+
+---
+
+**Nico:**
+And this is supposed to be **your PFS**.
+
+---
+
+**Carine:**
+Yes, that is the one.
+
+---
+
+**Nico:**
+This is the one you see in **Click (Qlik)**.
+
+Then after that:
+
+* one branch goes **to the right**
+* another branch goes **to the left**
+
+Right?
+
+---
+
+**Nico:**
+So the reason is that **AEB is designed this way**.
+
+---
+
+**Carine:**
+Nico please, can you correct **PFP22 to 1123**
+so I can take a **screenshot**?
+
+---
+
+**Nico:**
+Ah, I need to **rearrange it**.
+
+---
+
+**Carine:**
+Yes, just correct the **West part**
+the numbers **1-2-3-4**.
+
+Especially **number 3**.
+
+---
+
+**Nico:**
+Okay.
+
+---
+
+**Carine:**
+So that I can take a **screenshot**.
+
+---
+
+**Mohammad:**
+For me it was **good, Carine**.
+
+---
+
+**Carine:**
+Yes yes, I will **send it to you**.
+
+---
+
+**Nico:**
+Ah, do I need to go to another **meeting now**?
+
+---
+
+**Carine:**
+Wait a moment.
+
+---
+
+**Carine:**
+Mohammad, take a **screenshot of that Query**.
+
+---
+
+**Mohammad:**
+Okay, thank you very much.
+
+---
+
+**Carine:**
+Yes, like that it’s good.
+
+---
+
+**Nico:**
+If we go back we can also **do this**.
+
+---
+
+**Carine:**
+Okay.
+
+---
+
+**Nico:**
+Like this for example?
+
+---
+
+**Mohammad:**
+Yes, like that is good too.
+
+---
+
+**Nico:**
+Okay, take the **picture from here**.
+
+---
+
+# Technical Summary of the Meeting
+
+They were discussing the **Open Fiber network structure**.
+
+## Basic Network Structure
+
+```
+POP
+ |
+PFP
+ |
+PFS1
+PFS2
+PFS3
+PFS4
+```
+
+---
+
+## Real Network Design (Ring / Semi-Ring)
+
+```
+        PFS2
+       /     \
+POP — PFP     PFS3
+       \     /
+        PFS4
+```
+
+---
+
+## Main Idea
+
+* **POP** is located in the center.
+* The network splits into **East / West directions**.
+* At the end the two sides reconnect to form a **Ring topology**.
+
+However, sometimes the **path in the data appears non-circular** because of the way the connection between **PFS2 and PFS4** is represented.
+
+---
+
+If you want, I can also explain **exactly why a Loop appeared in your Query in Qlik or SQL**,
+which is very important for your work with **Open Fiber**.
+
+
+
+
+
+
+
