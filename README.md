@@ -1,6 +1,10 @@
 # SERF-tmp_l3_recursive.pni_recursive
 
 
+![SERF1](foto10.png)
+
+
+
 # Fiber Network Architecture – Key Concepts (Open Fiber)
 
 This document explains some fundamental concepts used in **FTTH (Fiber To The Home)** networks, particularly those used by companies such as Open Fiber in Italy.
