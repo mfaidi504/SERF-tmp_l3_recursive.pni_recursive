@@ -250,6 +250,273 @@ instead of xxxx try to use the code of apparato edificio you will see the list o
 
 
 
+## What Result You Will Get
+
+The statement:
+
+> "you will see the list of cable from apparato edificio to pop"
+
+means that the query returns:
+
+**All the cables forming the path from the building device (Apparato Edificio) to the POP (Point of Presence).**
+
+---
+
+##  Network Path Representation
+
+The result typically represents the network path as follows:
+
+```
+Apparato Edificio
+        ↓
+Distribution Cable
+        ↓
+Joint / Cabinet
+        ↓
+Backbone Cable
+        ↓
+POP
+```
+
+---
+
+## What is Apparato Edificio
+
+**Apparato Edificio** refers to:
+
+> The fiber device or termination point located inside a building that connects the building to the fiber network.
+
+In simple terms:
+
+* It is the **fiber entry/distribution point inside the building**
+* It represents the **starting node of the network path**
+
+Example:
+
+```
+AE ID: 4026609553665681626
+```
+
+---
+
+##  What the Query Shows
+
+When running the query, it displays:
+
+* The list of cables
+* The sequence of network elements
+* The full path from:
+
+  * Apparato Edificio → POP
+
+---
+
+##  What is POP
+
+**POP (Point of Presence)** is:
+
+> The central node of the network where fiber connections are aggregated.
+
+It acts as:
+
+* A **core network hub**
+* The **final destination of the fiber path**
+
+---
+
+## Why This Table is Useful
+
+The statement:
+
+> "this is a useful table to check the continuity of the net"
+
+means that this table is used to verify:
+
+### ✅ Network Continuity
+
+It helps ensure that:
+
+* All cables are properly connected
+* No segment of the path is missing
+* The fiber connection is complete from building to POP
+
+### 🔍 Detect Issues Such As:
+
+* Missing cables
+* Broken connections
+* Incorrect routing
+* Incomplete topology
+
+---
+
+## Explanation of Output Columns
+
+### 1. id
+
+```
+4026609553665681626
+```
+
+* This is the **Apparato Edificio ID**
+* It represents the starting point of the path
+
+---
+
+### 2. level
+
+```
+9
+```
+
+* Indicates the number of nodes in the path
+* The path includes approximately **9 network elements**
+
+---
+
+### 3. isroot
+
+```
+FALSE
+```
+
+* This node is **not the root** of the tree structure in the database
+
+---
+
+### 4. isleaf
+
+```
+TRUE
+```
+
+* This is the **end of the path**
+* The path terminates at the **POP**
+
+---
+
+### 5. iscyclic
+
+```
+FALSE
+```
+
+* There is **no loop** in the network path
+* This is correct and expected behavior
+
+---
+
+### 6. isfork
+
+```
+FALSE
+```
+
+* There is **no branching (fork)** in this path
+* The path is linear
+
+---
+
+## 🔑 Most Important Columns
+
+### 7. path_des
+
+```
+/APPARATO_EDIFICIO/PD/PFS/PFP/PFP/PFP/PFP/POP
+```
+
+This describes the **types of nodes in the path**.
+
+### Path Breakdown:
+
+```
+APPARATO_EDIFICIO
+        ↓
+PD
+        ↓
+PFS
+        ↓
+PFP
+        ↓
+PFP
+        ↓
+PFP
+        ↓
+PFP
+        ↓
+POP
+```
+
+### Element Meanings:
+
+| Element           | Meaning                      |
+| ----------------- | ---------------------------- |
+| APPARATO_EDIFICIO | Building fiber device        |
+| PD                | Distribution Point           |
+| PFS               | Secondary distribution point |
+| PFP               | Primary distribution point   |
+| POP               | Central network node         |
+
+---
+
+### 8. path_cavo
+
+* Contains the **IDs of the cables**
+* Represents the physical connections between nodes
+
+---
+
+### 9. path_id
+
+* Contains the **IDs of the network elements (nodes)**
+* Represents the devices or connection points
+
+---
+
+## 8️⃣ Why There Are Two Rows
+
+If the query returns two rows, it means:
+
+### 🔁 There are Two Different Paths to the POP
+
+Example:
+
+* Route 1: Apparato Edificio → PD → ... → POP
+* Route 2: Apparato Edificio → PD → ... → POP
+
+### ✅ This is Normal
+
+Fiber networks often include:
+
+* **Redundant paths**
+* **Alternative routes**
+
+This improves:
+
+* Reliability
+* Fault tolerance
+
+---
+
+## ✅ Final Summary
+
+* The query shows the **full fiber path from the building to the POP**
+* It includes:
+
+  * Nodes (devices)
+  * Cables
+* It is used to:
+
+  * Verify network continuity
+  * Detect errors in topology
+* A valid result should have:
+
+  * No loops (`iscyclic = FALSE`)
+  * A complete path ending at POP (`isleaf = TRUE`)
+
+---
+
+🚀 This table is essential for validating fiber network integrity and ensuring correct connectivity from end-user buildings to the core network.
+
 
 # Open Fiber Network FAQ / Notes
 
