@@ -1,5 +1,10 @@
 # SERF-tmp_l3_recursive.pni_recursive
 
+Nico ma ti torna questa ricostruzione? Mi sembra molto strano.
+
+![SERF1](foto15.png)
+
+
 
 ![SERF1](foto10.png)
 
