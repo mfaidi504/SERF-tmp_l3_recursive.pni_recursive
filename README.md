@@ -996,5 +996,7 @@ which is very important for your work with **Open Fiber**.
 # Via Monte Cenisio, 10, Bergamo, BG, Italia === 03_016_016024_8000032933_8
 
 
+# perché la rete dell'id building su Dashboard Civile disegna un anello e non segue lo stesso percorso visibile su Serf
 
-
+![SERF20](1.png)
+![SERF20](2.png)
