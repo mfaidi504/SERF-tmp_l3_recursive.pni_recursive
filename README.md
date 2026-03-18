@@ -1014,3 +1014,22 @@ which is very important for your work with **Open Fiber**.
 
 
  # ci sono altri pfp collegati al pop oltre al West1? 
+
+
+
+
+ l1_pni.relazione_cavo_apparato
+ 
+contiene il grafo dei cavi di pni
+ 
+es.: dal PFS 1 tramite il cavo X (può essere visto come un arco di un grafo)  raggiungo il Giunto 1, dal Giunto 1, tramite il cavo Y raggiungo il PFP 1
+ 
+this is the Cable Graph
+ 
+then we have the Infrastructure Graph
+ 
+l1_pni.relazione_route_cavo
+
+
+
+ 
