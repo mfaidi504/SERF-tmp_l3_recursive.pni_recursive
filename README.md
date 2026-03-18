@@ -1011,3 +1011,6 @@ which is very important for your work with **Open Fiber**.
 
 **Bypass nella realtà
  stato bypassato un nodo (ad esempio PFP3), quindi ci sono due percorsi**
+
+
+ # ci sono altri pfp collegati al pop oltre al West1? 
