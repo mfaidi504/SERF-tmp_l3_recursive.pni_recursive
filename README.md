@@ -1000,3 +1000,14 @@ which is very important for your work with **Open Fiber**.
 
 ![SERF20](1.png)
 ![SERF20](2.png)
+
+
+**Nella Dashboard la rete appare come un anello, il che può indicare la presenza di percorsi multipli o connessioni incoerenti, mentre SERF mostra solo il percorso principale.**
+
+**Skip connection (ad esempio PFP2 → PFP4)
+ può causare un loop fittizio**
+
+**lo stesso cavo è duplicato**
+
+**Bypass nella realtà
+ stato bypassato un nodo (ad esempio PFP3), quindi ci sono due percorsi**
